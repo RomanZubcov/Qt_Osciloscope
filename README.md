@@ -1,6 +1,6 @@
 # Qt Oscilloscope
 
-This project demonstrates a simple two-channel software oscilloscope built with Qt 5.
+This project demonstrates a simple two-channel software oscilloscope built with Qt 6.
 
 ## Building
 
@@ -11,5 +11,5 @@ cmake ..
 make
 ```
 
-The resulting executable `Oscilloscope` requires Qt 5 with the `Widgets` and `SerialPort` modules.
+The resulting executable `Oscilloscope` requires Qt 6 with the `Widgets` and `SerialPort` modules.
 

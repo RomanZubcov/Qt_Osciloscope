@@ -1,11 +1,11 @@
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 3.16)
 project(Qt_Oscilloscope)
 
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 
-find_package(Qt5 COMPONENTS Widgets SerialPort REQUIRED)
+find_package(Qt6 COMPONENTS Widgets SerialPort REQUIRED)
 
 add_executable(Oscilloscope
     src/main.cpp
@@ -16,5 +16,5 @@ add_executable(Oscilloscope
 
 target_include_directories(Oscilloscope PRIVATE include)
 
-target_link_libraries(Oscilloscope Qt5::Widgets Qt5::SerialPort)
+target_link_libraries(Oscilloscope Qt6::Widgets Qt6::SerialPort)
 
